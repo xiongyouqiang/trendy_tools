@@ -1,0 +1,20 @@
+<ivy-module version="1.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"            
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info organisation="trendy" module="poc_test"/>
+
+	<configurations>
+		<include file="../EC_BASE/default-ivy-configurations.xml"/>
+	</configurations>
+     
+	<dependencies>
+		<dependency org="slf4j" name="slf4j-api" rev="1.6.4" transitive="false"/>
+		<dependency org="dom4j" name="dom4j" rev="1.6.1" transitive="false"/>
+		
+		<dependency org="trendy" name="trendy-framework" rev="0.1.14" transitive="false"/>	
+		<dependency org="trendy" name="trendy-admin-client" rev="0.1.1" transitive="false"/>
+		<dependency org="trendy" name="trendy-system-client" rev="0.1.9" transitive="false"/>	
+		
+	</dependencies>
+
+</ivy-module>		
