@@ -78,7 +78,7 @@ public class CiphertextKit {
 	 */
 	public static String encrypt(CiphertextBean bean, Key key, String md5Key) {
 		bean.setRandomValue(getRandomValue(randomValueLength));
-		bean.setTimestamp(String.valueOf(new Date().getTime()));
+		bean.setTimestamp(String.valueOf(System.currentTimeMillis()));
 		bean.setSign(sign(bean, md5Key));
 
 		String encryptStr = "";
